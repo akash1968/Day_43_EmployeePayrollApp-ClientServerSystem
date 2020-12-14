@@ -5,8 +5,6 @@ class EmployeePayrollData
     get name(){ return this._name;}
     set name(name)
     {
-        //console.log("Setting: "+name);
-        //this._name= name;
         //regular expression for name
         let nameRegex= RegExp('^[A-Z]{1}[a-zA-Z ]{2,}$');
         if(nameRegex.test(name))
